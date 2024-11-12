@@ -1,6 +1,6 @@
 Installation# FastAPI User Management API
 
-This repository contains a simple **FastAPI** application for managing a user list with CRUD operations. The application uses a **dictionary-based approach** for storing and retrieving user data by `user_id`, improving query performance.
+This repository contains a simple **FastAPI** application for managing a user list with CRUD operations.
 
 For a detailed explanation of this code, please refer to the blog post: [Tistory: Building a Backend with FastAPI](https://teapopo.tistory.com/33), [Naver: Building a Backend with FastAPI](https://teapopo.tistory.com/33).
 
