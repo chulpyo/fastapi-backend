@@ -1,4 +1,4 @@
-# FastAPI User Management API
+# FastAPI Backend(User Management)
 
 This repository contains a simple **FastAPI** application for managing a user list with CRUD operations.
 
@@ -15,8 +15,8 @@ For a detailed explanation of this code, please refer to the blog post: [Tistory
 
 1. Clone the repository:
    ``` bash
-   git clone https://github.com/yourusername/fastapi-user-management.git
-   cd fastapi-user-management
+   git clone https://github.com/chulpyo/fastapi-backend.git
+   cd fastapi-backend
    ```
 
 2. Install dependencies:
