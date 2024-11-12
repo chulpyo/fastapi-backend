@@ -1,4 +1,4 @@
-Installation# FastAPI User Management API
+# FastAPI User Management API
 
 This repository contains a simple **FastAPI** application for managing a user list with CRUD operations.
 
