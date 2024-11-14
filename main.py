@@ -48,7 +48,7 @@ def update_user(user_id: str, name: Optional[str] = None, age: Optional[int] = N
         user.name = name
     if age:
         user.age = age
-    users[user_id] = user
+
     return user
 
 # 사용자 삭제
