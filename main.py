@@ -20,7 +20,7 @@ class UserCreate(BaseModel):
 # 사용자 전체 조회
 @app.get("/users", response_model=List[User])
 def read_users():
-    return [user for key, user in users.items()]
+    return users.values()
 
 # 사용자 생성
 @app.post("/users", response_model=User)
