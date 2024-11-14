@@ -1,5 +1,5 @@
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 from typing import Dict, Optional, List
 from uuid import uuid4
 
@@ -15,7 +15,8 @@ class UserCreate(BaseModel):
     name: str = Field(..., min_length=2, max_length=50, description="The name of the user, between 2 and 50 characters.")
     age: int = Field(..., gt=0, lt=120, description="The age of the user, must be between 1 and 120.")
 
-    @validator("name")
+    @field_validator("name")
+    @classmethod
     def name_must_be_alphanumeric(cls, value):
         if not value.isalnum():
             raise ValueError("Name must be alphanumeric.")
