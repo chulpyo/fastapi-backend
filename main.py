@@ -1,13 +1,11 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from typing import Optional, List
+from typing import Optional, List, Dict
 from uuid import uuid4
 
 app = FastAPI()
 
-# 사용자 목록을 딕셔너리로 관리
-users = {}
-
+# 사용자 관련 모델
 class User(BaseModel):
     id: str
     name: str
@@ -20,6 +18,10 @@ class UserCreate(BaseModel):
 class UserUpdate(BaseModel):
     name: Optional[str] = None
     age: Optional[int] = None
+
+
+# 사용자 목록을 딕셔너리로 관리
+users: Dict[str, User] = {}
 
 
 # 사용자 전체 조회
