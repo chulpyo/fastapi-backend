@@ -57,4 +57,4 @@ def delete_user(user_id: str):
     user = users.pop(user_id, None)
     if user is None:
         raise HTTPException(status_code=404, detail="User not found")
-    return {"message": f"User '{user.name}' deleted"}
+    return user
